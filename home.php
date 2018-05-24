@@ -36,3 +36,10 @@
         //your page
         echo '<h1>my login page</h1>';
     });
+    
+    //show 404 page if router cant match the request:
+    if(!ROUTE::$founded){ 
+        //here you return 404 view page (404.php for example) 
+        echo '404 Page';
+    }
+        
